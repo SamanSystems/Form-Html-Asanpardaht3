@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="محاسبه قيمت و ارسال به درگاه زرين پال جهت پرداخت آنلاين">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript">
+function calcform()
+{
+with (document.form1)
+{ TransactionAmount.value = +number1.value * +number2.value}}
+/*Note the extra + operator before each value. This is needed to convert the
+value from a string to a number.*/
+</script>
+<title>فرم محاسبه قيمت زرين پال | شبكه تجارت الكترونيك ايران</title>
+</head>
+<body dir="rtl" bgcolor="#F3F3F3">
+
+<div align="center">
+	<table border="0" width="100%" dir="rtl" cellspacing="1" id="table1">
+		<tr>
+			<td bgcolor="#FBD04E">
+			<p align="center">
+			<img border="0" src="images/logo.jpg" width="413" height="154"></td>
+		</tr>
+		<tr>
+			<td>
+			<div align="center">
+				<table class="text" border="0" width="447" cellspacing="1" dir="rtl" id="table2">
+					<tr><form class="text" action="https://www.zarinpal.com/webservice/Simplepay" method="post" onsubmit="msg('onSubmit')" id="TransactionAddForm" target="_blank" name="form1" action="">
+<input type="hidden" id="TransactionAccountID" value="zp.14512.1" name="data[Transaction][account_id]">
+
+						<td dir="rtl" align="right" width="154" valign="middle"><span lang="fa">
+						قيمت كالا :</span></td>
+						<td dir="rtl" align="right" width="298" valign="middle" colspan="2">
+						<input type="text" id="number1" value="15000" size="7" class="fild1" dir="ltr" name="Price" /><span lang="fa">&nbsp; 
+						تومان</span></td>
+					</tr>
+					<tr>
+						<td dir="rtl" align="right" width="154" valign="middle"><span lang="fa">
+						تعداد مورد درخواست :</span></td>
+						<td dir="rtl" align="right" width="52" valign="middle">
+						<input type="text" id="number2" value="1" size="20" dir="ltr" name="Quantity" class="fild" /></td>
+						<td dir="rtl" align="right" width="231" valign="middle"><input type="button" id="Calculate" value="محاسبه مبلغ"
+onclick="calcform()" class="btn1" /></td>
+					</tr>
+					<tr>
+						<td dir="rtl" align="right" width="154" valign="middle"><span lang="fa">
+						جمع كل قابل پرداخت :</span></td>
+						<td dir="rtl" align="right" width="298" valign="middle" colspan="2">
+						<input type="text" id="TransactionAmount" value=" جمع كل مبلغ پرداختي"  onblur="if(this.value=='') this.value=' مبلغ را به  تومان وارد كنيد';" onfocus="if(this.value==' مبلغ را به  تومان وارد كنيد') this.value='';" name="data[Transaction][amount]" maxlength="9" size="14" dir="rtl" class="fild-price"></td>
+					</tr>
+					<tr>
+						<td colspan="3" height="50" valign="bottom"><input name="submit" type="submit" class="btn" value=" پرداخت آنلاین" class="btn"></td><input type="hidden" id="TransactionRedirectUrl" value="آدرس صفحه بازگشت" name="data[Transaction][redirect_url]">
+
+					</tr></form>
+					<tr>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" class ="link">
+						<p style="text-align: center"><span lang="fa">
+						<a target="_blank" href="http://www.IraniBazar.com">
+						<span style="text-decoration: none">
+						<a target="_blank" title=" طراحی وب ، برنامه نویسی ، تبلیغات تخصصی و ارائه پنا ارسال پیامک انبوه " href="http://www.IraniBazar.com">
+						<span style="text-decoration: none">شبکه تجارت الکترونیک 
+						ایران</span></a></span></a></span></td>
+					</tr>
+				</table>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>
